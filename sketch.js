@@ -58,28 +58,28 @@ function draw() {
     var randmiclevel = random(smoothMicLevel*3000);
     var randmiclevel2 = random(smoothMicLevel*2200)
 
-    image(image1,1160,750, randmiclevel,randmiclevel2);
-    image(image2,700,750, randmiclevel,randmiclevel2);
-    image(image3,280,700, randmiclevel,randmiclevel2);
-    image(image4,1750,950, randmiclevel,randmiclevel2);
-    image(image5,540,940, randmiclevel,randmiclevel2);
-    image(image6,300,880, randmiclevel,randmiclevel2);
-    image(image7,1250,1010, randmiclevel,randmiclevel2);
-    image(image8,1500,1010, randmiclevel,randmiclevel2);
-    image(image9,1800,820, randmiclevel,randmiclevel2);
-    image(image10,380,800, randmiclevel,randmiclevel2);
-    image(image11,990,660, randmiclevel,randmiclevel2);
-    image(image12,1200,640, randmiclevel,randmiclevel2);
-    image(image13,840,880, randmiclevel,randmiclevel2);
-    image(image14,470,650, randmiclevel,randmiclevel2);
-    image(image15,320,60, randmiclevel,randmiclevel2);
-    image(image16,850,10, randmiclevel,randmiclevel2);
-    image(image17,820,80, randmiclevel,randmiclevel2);
-    image(image18,1350,10, randmiclevel,randmiclevel2);
-    image(image19,1250,90, randmiclevel,randmiclevel2);
-    image(image20,300,90, randmiclevel,randmiclevel2);
-    image(image9,750,600, randmiclevel,randmiclevel2);
-    image(image9,1100,880, randmiclevel,randmiclevel2);
+    image(image1,width * .8,height * .7, randmiclevel,randmiclevel2);
+    image(image2,width * .3,height * .75, randmiclevel,randmiclevel2);
+    image(image3,width * .1,height * .6 , randmiclevel,randmiclevel2);
+    image(image4,width * .85,height * .95, randmiclevel,randmiclevel2);
+    image(image5,width * .27,height * .93, randmiclevel,randmiclevel2);
+    image(image6,width * .15,height * .86, randmiclevel,randmiclevel2);
+    image(image7,width * .6,height * .98 , randmiclevel,randmiclevel2);
+    image(image8,width * .74,height * .98, randmiclevel,randmiclevel2);
+    image(image9,width * .9,height * .8, randmiclevel,randmiclevel2);
+    image(image10,width * .2,height * .8, randmiclevel,randmiclevel2);
+    image(image11,width * .5,height * .63, randmiclevel,randmiclevel2);
+    image(image12,width * .62,height * .6, randmiclevel,randmiclevel2);
+    image(image13,width * .4,height * .85, randmiclevel,randmiclevel2);
+    image(image14,width * .22,height * .65, randmiclevel,randmiclevel2);
+    image(image15,width * .15,height * .1, randmiclevel,randmiclevel2);
+    image(image16,width * .4,height * .01, randmiclevel,randmiclevel2);
+    image(image17,width * .4,height * .11, randmiclevel,randmiclevel2);
+    image(image18,width * .65,height * .01, randmiclevel,randmiclevel2);
+    image(image19,width * .61,height * .09, randmiclevel,randmiclevel2);
+    image(image20,width * .15,height * .13, randmiclevel,randmiclevel2);
+    image(image9,width * .35,height * .6, randmiclevel,randmiclevel2);
+    image(image9,width * .55,height * .85, randmiclevel,randmiclevel2);
 
 
 
