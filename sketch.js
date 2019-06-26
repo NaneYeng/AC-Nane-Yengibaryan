@@ -40,6 +40,8 @@ function setup() {
     button = createButton('Listen');
     button.mousePressed(toggleListen);
 
+    slider = createSlider(1000, 6000, 3500) 
+
     mic = new p5.AudioIn();
     mic.start();
 
@@ -48,15 +50,19 @@ function setup() {
 }
 
 function draw() {
-
+    multiple = slider.value();
     micLevel = mic.getLevel();
-
+    // micLevel = multiple
+    console.log(micLevel)
     smoothMicLevel = lerp(smoothMicLevel, micLevel, 0.9);
+    //  smoothMicLevel = smoothMicLevel * multiple;
     imageMode(CENTER);
     image(bgimage,width/2,height/2,width, height);
+    console.log(smoothMicLevel);
+    var randmiclevel = random(smoothMicLevel*3000)+ multiple /20;
+    var randmiclevel2 = random(smoothMicLevel*2200)+ multiple /20;
 
-    var randmiclevel = random(smoothMicLevel*3000);
-    var randmiclevel2 = random(smoothMicLevel*2200)
+    
 
     image(image1,width * .8,height * .7, randmiclevel,randmiclevel2);
     image(image2,width * .3,height * .75, randmiclevel,randmiclevel2);
