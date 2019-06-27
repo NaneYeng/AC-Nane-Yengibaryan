@@ -24,16 +24,8 @@ function preload() {
     image18 =loadImage('images/drop-10.png');
     image19 =loadImage('images/drop-11.png');
     image20 =loadImage('images/drop-12.png');
-
-
-
-
-
-
-
-
-
 }
+
 function setup() {
     createCanvas(windowWidth, windowHeight-50);
     background(0);
@@ -44,9 +36,6 @@ function setup() {
 
     mic = new p5.AudioIn();
     mic.start();
-
-
-    
 }
 
 function draw() {
@@ -59,11 +48,10 @@ function draw() {
     imageMode(CENTER);
     image(bgimage,width/2,height/2,width, height);
     console.log(smoothMicLevel);
-    var randmiclevel = random(smoothMicLevel*3000)+ multiple /20;
-    var randmiclevel2 = random(smoothMicLevel*2200)+ multiple /20;
+    var randmiclevel = random(smoothMicLevel*multiple);
+    var randmiclevel2 = random(smoothMicLevel* multiple);
 
     
-
     image(image1,width * .8,height * .7, randmiclevel,randmiclevel2);
     image(image2,width * .3,height * .75, randmiclevel,randmiclevel2);
     image(image3,width * .1,height * .6 , randmiclevel,randmiclevel2);
@@ -86,25 +74,6 @@ function draw() {
     image(image20,width * .15,height * .13, randmiclevel,randmiclevel2);
     image(image9,width * .35,height * .6, randmiclevel,randmiclevel2);
     image(image9,width * .55,height * .85, randmiclevel,randmiclevel2);
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
 }
 
 function toggleListen() {
